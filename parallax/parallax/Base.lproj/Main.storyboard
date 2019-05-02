@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List TableVC-->
+        <scene sceneID="FP5-z1-EXT">
+            <objects>
+                <tableViewController id="8oh-Ho-hqI" customClass="ListTableVC" customModule="parallax" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Za0-2Z-euA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="21k-NC-6XK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="21k-NC-6XK" id="RyM-GD-mBv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="RJD-BA-uzc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg4-UZ-g0S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35292701198630139" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="60"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="eg4-UZ-g0S" secondAttribute="bottom" id="6NM-A4-7WS"/>
+                                        <constraint firstAttribute="trailing" secondItem="eg4-UZ-g0S" secondAttribute="trailing" id="6nV-34-fod"/>
+                                        <constraint firstAttribute="bottom" secondItem="RJD-BA-uzc" secondAttribute="bottom" id="Bhj-tf-bo2"/>
+                                        <constraint firstAttribute="trailing" secondItem="RJD-BA-uzc" secondAttribute="trailing" id="DzE-fy-YJV"/>
+                                        <constraint firstItem="eg4-UZ-g0S" firstAttribute="top" secondItem="RyM-GD-mBv" secondAttribute="top" id="XOV-rJ-YGn"/>
+                                        <constraint firstItem="eg4-UZ-g0S" firstAttribute="leading" secondItem="RyM-GD-mBv" secondAttribute="leading" id="YIE-M7-PNi"/>
+                                        <constraint firstItem="RJD-BA-uzc" firstAttribute="leading" secondItem="RyM-GD-mBv" secondAttribute="leading" id="e1E-xK-doU"/>
+                                        <constraint firstItem="RJD-BA-uzc" firstAttribute="top" secondItem="RyM-GD-mBv" secondAttribute="top" id="eHd-Vz-fw3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8oh-Ho-hqI" id="Acz-qp-MFr"/>
+                            <outlet property="delegate" destination="8oh-Ho-hqI" id="DJV-lL-OXO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zJ-aC-FHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276.81159420289856" y="-102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1920" height="1080"/>
+    </resources>
+</document>
